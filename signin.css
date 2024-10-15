@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'lato-semibold';
+    src: url('./../fonts/lato-semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('./../fonts/poppins-semibold.ttf') format('truetype');
+}
+
+/*==========================================================================================================================================*/
+/*                                                           Global Style (Fixed)                                                           */
+/*==========================================================================================================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+    height: 100vh;
+    width: 100vw;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.title-bar {
+    font-family: 'poppins-semibold';
+    text-transform: uppercase;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-user {
+    width: 100vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signin-cont {
+    display: flex;
+    flex-direction: column;
+    font-family: 'lato-semibold';
+    font-size: 1.3rem;
+}
+
+.id, .pass-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+#userid, .input-pass {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    background: transparent;
+    display: flex;
+}
+
+#password {
+    background: transparent;
+    flex-grow: 1;
+}
+
+#pass-controller {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    width: fit-content;
+    transition: transform 100ms linear;
+}
+
+#pass-controller:active {
+    transform: translateY(2px);
+}
+
+#forgot-pass {
+    color: blue;
+    text-decoration: none;
+    text-align: right;
+}
+
+#signin {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(157, 0, 255);
+    box-shadow: 0 5px 5px black,
+                inset 10px 10px 25px rgba(225, 173, 255, 0.5),
+                inset -10px -10px 25px rgba(117, 0, 167, 0.5);
+    letter-spacing: 2px;
+    color: rgb(42, 0, 60);
+    text-shadow: 0 0 5px rgb(179, 98, 255);
+    transition: all 100ms linear;
+    text-transform: uppercase;
+    margin-inline: auto;
+}
+
+#signin:active {
+    color: white;
+    transform: translateY(3px);
+    box-shadow: 0 0 0 black,
+                inset 10px 10px 25px rgba(225, 173, 255, 0.5),
+                inset -10px -10px 25px rgba(117, 0, 167, 0.5);
+}
+
+#new-user a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*==========================================================================================================================================*/
+/*                                                      Mobile Devices (Base Style)                                                         */
+/*==========================================================================================================================================*/
+
+.title-bar {
+    height: 10vh;
+}
+
+.container {
+    height: 80vh;
+}
+
+#new-user {
+    height: 10vh;
+}
+
+.signin-cont {
+    height: fit-content;
+    width: 95vw;
+    padding: 2rem;
+}
+
+.id, .pass-cont {
+    margin-bottom: 1rem;
+}
+
+#userid {
+    height: 2rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+}
+
+.input-pass {
+    height: 2rem;
+}
+
+#password {
+    height: 100%;
+    width: 80%;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+}
+
+#pass-controller {
+    height: 100%;
+    font-size: 0.75rem;
+}
+
+#forgot-pass {
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+#signin {
+    height: 2.5rem;
+    width: 65%;
+    font-size: 1.2rem;
+}

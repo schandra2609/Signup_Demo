@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./signin.css">
+</head>
+
+<body>
+
+    <div class="title-bar">
+         <h1 class="heading pointer">Customized Bank</h1>
+    </div>
+
+    <div class="container">
+        <div class="signin-cont">
+            <div class="id">
+                <label for="userid">User ID</label>
+                <input name="userid" id="userid" type="text" placeholder="Enter your user ID" required/>
+            </div>
+            <div class="pass-cont">
+                <label for="password">Password</label>
+                <div class="input-pass">
+                    <input type="password" name="password" id="password" placeholder="Enter password" required />
+                    <button id="pass-controller" class="pointer">Show</button>
+                </div>
+            </div>
+            <a href="#" id="forgot-pass">Forgot password?</a>
+            <button id="signin" class="pointer">Sign In</button>
+        </div>
+    </div>
+
+    <p id="new-user">New User? <a href="#">Sign Up</a></p>
+
+    <script src="./signin.js"></script>
+</body>
+</html>
